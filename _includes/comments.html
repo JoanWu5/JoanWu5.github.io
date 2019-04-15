@@ -8,8 +8,8 @@
         this.page.identifier = "{{ page.url }}";
     };
 
-    var disqus_shortname = '{{ site.comment.disqus }}';
-    
+    //var disqus_shortname = '{{ site.comment.disqus }}';
+    var disqus_shortname = 'joannwu';
     (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -17,7 +17,7 @@
             (d.head || d.body).appendChild(s);
         })();
     </script>
-    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
+    <noscript>if you want to see<a href="http://disqus.com/?ref_noscript"> Disqus </a> comments,please agree to use JavaScript</noscript>
     
   {% elsif site.comment.duoshuo %}
     <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
